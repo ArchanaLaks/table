@@ -1,0 +1,186 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <table class="table table-bordered">
+            <thead>
+              <tr style="font-size: 15px;">
+                <th scope="col">Duty Info city wise</th>
+                <th scope="col">from date</th>
+                <th scope="col">To date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="font-size: 15px;">
+                <th scope="row">City Name</th>
+                <th colspan="2">No of Bookings</th>
+              </tr>
+              <tr style="font-size: 12px;">
+                <td scope="row">Banglore</td>
+                <td colspan="2">40</td>
+              </tr>
+              <tr style="font-size: 12px;">
+                <td scope="row">Chennai</td>
+                <td colspan="2">10</td>
+              </tr>
+              <tr style="font-size: 12px;">
+                <td scope="row">Delhi</td>
+                <td colspan="2">15</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="col">          
+          <table class="table table-bordered">
+            <thead style="font-size: 15px;">
+              <tr>
+                <th scope="col">Own Vechicle</th>
+                <th scope="col">from date</th>
+                <th scope="col">To date</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let item of data" >
+              <tr style="font-size: 15px;">
+                <th scope="row">Vehicle no</th>
+                <th>No of Bookings</th>
+                <th>Taxable Amt</th>
+              </tr>
+              <tr>
+                <td scope="row" style="font-size: 12px;" >{{item.vehicles_detail[0].vechile_no}}</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td scope="row" style="font-size: 12px;">{{item.vehicles_detail[1].vechile_no}}</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td scope="row" style="font-size: 12px;">{{item.vehicles_detail[2].vechile_no}}</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td scope="row" style="font-size: 12px;">{{item.vehicles_detail[3].vechile_no}}</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row" >
+        <div class="col">
+          <table class="table table-bordered ">
+            <thead style="font-size: 15px;">
+              <tr>
+                <th scope="col" colspan="6" style="text-align: center;">Free Vehicle List</th>
+                <th scope="col">from date</th>
+                <th scope="col">To date</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let item of data"  style="font-size: 12px;" >
+              <tr>
+                <td scope="row">Vehicle no</td>
+                <td>Driver Naame</td>
+                <td>SOC%</td>
+                <td>Worked Hr</td>
+                <td>Free Hr</td>
+                <td>Login Time</td>
+                <td>Logout Time</td>
+                <td>Vehicle Current Location</td>
+              </tr>
+              <tr>
+                <td scope="row" style="font-size: 11px;" >{{item.vehicles_detail[0].vechile_no}}</td>
+                <td>{{item.vehicles_detail[0].driver_name}}</td>
+                <td>{{item.vehicles_detail[0].soc}}</td>
+                <td>{{item.vehicles_detail[0].worked_hr}}Hr</td>
+                <td>{{item.vehicles_detail[0]?.free_hr}}Hr</td>
+                <td>{{item.vehicles_detail[0].login_time}}</td>
+                <td>{{item.vehicles_detail[0].logout_time}}</td>
+                <td>{{item.vehicles_detail[0].location}}</td>
+              </tr>
+              <tr>
+                <td scope="row" style="font-size: 11px;" >{{item.vehicles_detail[1].vechile_no}}</td>
+                <td>{{item.vehicles_detail[1].driver_name}}</td>
+                <td>{{item.vehicles_detail[1].soc}}</td>
+                <td>{{item.vehicles_detail[1].worked_hr}}Hr</td>
+                <td>{{item.vehicles_detail[1]?.free_hr}}Hr</td>
+                <td>{{item.vehicles_detail[1].login_time}}</td>
+                <td>{{item.vehicles_detail[1].logout_time}}</td>
+                <td>{{item.vehicles_detail[1].location}}</td>
+              </tr>
+              <tr>
+                <td scope="row" style="font-size: 11px;" >{{item.vehicles_detail[2].vechile_no}}</td>
+                <td>{{item.vehicles_detail[2].driver_name}}</td>
+                <td>{{item.vehicles_detail[2].soc}}</td>
+                <td>{{item.vehicles_detail[2].worked_hr}}Hr</td>
+                <td>{{item.vehicles_detail[2]?.free_hr}}</td>
+                <td>{{item.vehicles_detail[2].login_time}}</td>
+                <td>{{item.vehicles_detail[2].logout_time}}</td>
+                <td>{{item.vehicles_detail[2].location}}</td>
+              </tr>
+              <tr>
+                <td scope="row" style="font-size: 11px;" >{{item.vehicles_detail[3].vechile_no}}</td>
+                <td>{{item.vehicles_detail[3].driver_name}}</td>
+                <td>{{item.vehicles_detail[3].soc}}</td>
+                <td>{{item.vehicles_detail[3].worked_hr}}Hr</td>
+                <td>{{item.vehicles_detail[3].free_hr}}</td>
+                <td>{{item.vehicles_detail[3].login_time}}</td>
+                <td>{{item.vehicles_detail[3].logout_time}}</td>
+                <td>{{item.vehicles_detail[3].location}}</td>
+              </tr>
+            </tbody>
+          </table>  
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="col" style="height: 50vh;width: 50vw;"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table class="table table-bordered">
+            <thead style="font-size: 15px;">
+              <tr>
+                <th scope="col" colspan="2.5" style="text-align: center;">Vendor Booking Info List</th>
+                <th scope="col">from date</th>
+                <th scope="col">To date</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let item of data">
+              <tr style="font-size: 15px;">
+                <th scope="row">Vendor Name</th>
+                <th>No of Booking</th>
+                <th colspan="2">Billed Amount</th>
+              </tr>
+              <tr style="font-size: 12px;">
+                <td scope="row">{{item.vendors[0].name}}</td>
+                <td>{{item.vendors[0].bookings}}</td>
+                <td colspan="2">{{item.vendors[0].amount}}</td>
+              </tr>
+              <tr style="font-size: 12px;">
+                <td scope="row">{{item.vendors[1].name}}</td>
+                <td>{{item.vendors[1].bookings}}</td>
+                <td colspan="2">{{item.vendors[1].amount}}</td>
+              </tr>
+              <tr style="font-size: 12px;">
+                <td scope="row">{{item.vendors[2].name}}</td>
+                <td>{{item.vendors[2].bookings}}</td>
+                <td colspan="2">{{item.vendors[2].amount}}</td>
+              </tr>
+              <tr style="font-size: 12px;">
+                <td scope="row">{{item.vendors[3].name}}</td>
+                <td>{{item.vendors[3].bookings}}</td>
+                <td colspan="2">{{item.vendors[3].amount}}</td>
+              </tr>
+            </tbody>
+          </table>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

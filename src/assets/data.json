@@ -1,0 +1,67 @@
+{
+    "vendors":[
+        {
+            "name":"Raghunath",
+            "bookings":100,
+            "amount":600000
+        },
+        {
+            "name":"Venugopal",
+            "bookings":120,
+            "amount":200000
+        },
+        {
+            "name":"BS",
+            "bookings":40,
+            "amount":100000
+        },
+        {
+            "name":"Rajesh",
+            "bookings":40,
+            "amount":45000
+        }
+
+
+    ],
+    "vehicles_detail":[
+        {
+            "vechile_no":"KA 03 AK 5680",
+            "driver_name":"Raj",
+            "soc":"80%",
+            "worked_hr":8,
+            "free_hr":4,
+            "login_time":"09:00",
+            "logout_time":"20:00",
+            "location":"Map"
+        },
+        {
+            "vechile_no":"KA 03 AK 5681",
+            "driver_name":"Ismail",
+            "soc":"50%",
+            "worked_hr":10,
+            "free_hr":2,
+            "login_time":"11:00",
+            "logout_time":"23:00",
+            "location":"Map"
+        },
+        {
+            "vechile_no":"KA 03 AK 5682",
+            "driver_name":"Edward",
+            "soc":"100%",
+            "worked_hr":12,
+            "login_time":"09:00",
+            "logout_time":"23:00",
+            "location":"Map"
+        },
+        {
+            "vechile_no":"KA 03 AK 5683",
+            "driver_name":"Tamil",
+            "soc":"100%",
+            "worked_hr":12,
+            "login_time":"09:00",
+            "logout_time":"23:00",
+            "location":"Map"
+        }
+
+    ]
+}
